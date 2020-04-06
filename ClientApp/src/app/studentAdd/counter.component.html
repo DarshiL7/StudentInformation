@@ -1,0 +1,30 @@
+<div class="container">
+  <form [formGroup]="studentFormGroup">
+    <div class="form-group">
+      <label>Enter Student Name</label>
+      <input type="text" formControlName="studentName" />
+    </div>
+    <div class="form-group">
+      <label>Enter Student Mobile</label>
+      <input type="text" formControlName="studentMobile" />
+    </div>
+    <div class="form-group">
+      <label>Enter Student Email</label>
+      <input type="text" formControlName="studentEmail" />
+    </div>
+    <div class="form-group">
+      <label>Select Fee Status</label>
+      <select formControlName="feeStatus">
+        <option>True</option>
+        <option>False</option>
+      </select>
+    </div>
+    <div>
+      <label>Enter Course Name</label>
+      <input type="text" formControlName="courseName"/>
+    </div>
+  </form>
+  <div>
+    <button type="submit" (click)="onSubmit()">Submit</button>
+  </div>
+</div>
